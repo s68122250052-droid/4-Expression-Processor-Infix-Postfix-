@@ -1,0 +1,9 @@
+﻿Test ID,Input,Expected Result,Actual Result,Status
+TC01,3 + 4 * 2,Result = 11,Result = 11,PASSED
+TC02,(3 + 4) * 2,Result = 14,Result = 14,PASSED
+TC03,((8 + 2) * 5),Result = 50,Result = 50,PASSED
+TC04,(3 + 4,Error: Missing ')' at end,Validation Error Caught,PASSED
+TC05,3 + 4),Error: Extra ')' found,Validation Error Caught,PASSED
+TC06,3 + * 4,Error: Invalid operator sequence,Validation Error Caught,PASSED
+TC07,10 / (5 - 5),Error: Division by zero,ArithmeticException Caught,PASSED
+TC08,,Error: Expression is empty,Validation Error Caught,PASSED
